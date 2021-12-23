@@ -14,9 +14,10 @@ class account:
 l1=[]
 l2=[]
 l3=[]
+am=0
 f=True
 while(f):
-    print("\n1.Create\n2.Deposit\n3.withdraw\n4.Display\n5.Max balance\n6.Exit\n")
+    print("\n1.Create\n2.Deposit\n3.withdraw\n4.Display\n5.Max balance\n6.Toal Bank Balance\n7.Exit\n")
     n=int(input("Enter  your choice\n"))
     if(n==1):
         acc=int(input("Enter the account number\n"))
@@ -31,7 +32,9 @@ while(f):
         try:
             i=l2.index(acc)
             amt=int(input("Enter the acoount number\n"))
+            am+=amt
             l1[i].deposit(amt)
+            
         except:
             print("Account number doesn't to exist\n")
     elif(n==3):
@@ -39,6 +42,7 @@ while(f):
         try:
             i=l2.index(acc)
             amt=int(input("Enter the amount to withdraw\n"))
+            am-=amt
             l1[i].withdraw(amt)
         except:
             print("Account doesn't exist\n")
@@ -55,6 +59,8 @@ while(f):
             l3.append(l1[i].display())
         i=l3.index(max(l3))
         print("Account number : ",l2[i],"Balance : ",l3[i])
+    elif(n==6):
+        print("The total Bank balance :",am)
     else:
         f=False
             
