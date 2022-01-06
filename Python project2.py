@@ -1,10 +1,10 @@
 import pyttsx3
 #input
-text=input("")
+text=input("enter the text\n")
 #initializing the module
 text_to_speech=pyttsx3.init()
 #adjust the speed
-text_to_speech.setProperty('rate', 200)
+text_to_speech.setProperty('rate', 150)
 #change the voice
 voices=text_to_speech.getProperty('voices')
 text_to_speech.setProperty('voices', voices[1].id)# 0 for male ,1 for women
