@@ -40,7 +40,7 @@ input_text = StringVar()
  
 # Let us creating a frame for the input field
  
-input_frame = Frame(win, width=312, height=50, bd=0, highlightbackground="black", highlightcolor="black", highlightthickness=2)
+input_frame = Frame(win, width=312, height=60, bd=0, highlightbackground="black", highlightcolor="black", highlightthickness=2)
  
 input_frame.pack(side=TOP)
  
