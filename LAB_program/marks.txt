@@ -1,0 +1,4 @@
+S1 A B C D A B  B A C D
+S2 C A D D A A C B A B
+S3 D A D B C C A B D A
+S4 A B C D A B C D C A
