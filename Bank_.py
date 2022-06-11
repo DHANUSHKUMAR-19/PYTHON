@@ -7,6 +7,7 @@ class account:
     def withdraw(self,amt):
         if(self._balance-amt>100):
             print("Successfull withdraw\n")
+            self.balance-=amt
         else:
             print("Insufficient Balance\n")
     def display(self):

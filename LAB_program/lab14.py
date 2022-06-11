@@ -2,7 +2,8 @@ import os
 fname=input("Enter the file name:\t")
 total =0
 if os.path.isfile(fname):
-        with open(fname,'r') as f:
+        #with open(fname,'r') as f:
+            f=open(fname,'r')
             for i in f:
                 mark=i.split()
                 print(mark)
